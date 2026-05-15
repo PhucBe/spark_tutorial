@@ -186,7 +186,7 @@ def main():
         .outputMode("append")
         .option("path", PAYMENT_OUTPUT_PATH)
         .option("checkpointLocation", PAYMENT_CHECKPOINT_PATH)
-        .trigger(processingTime="10 seconds")
+        .trigger(processingTime="30 seconds")
         .start()
     )
 
